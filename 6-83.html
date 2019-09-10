@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="demo"></div>
+<script>
+let search = prompt();
+let englist = ["Girl","Man","Handsome","You"];
+let vietnam = ["Đẹp","Trai","Đẹp trai","Bạn"];
+let result;
+for (let i =0 ; i<englist.length;i++){
+    if (englist[i] === search){
+        result = vietnam[i];
+        document.getElementById("demo").innerHTML = result;
+        break;
+    } else if (vietnam[i] === search){
+        result = englist[i];
+        document.getElementById("demo").innerHTML = result;
+        break;
+
+
+    } else {
+        document.getElementById("demo").innerHTML = "không ra kết qửa"
+    }
+}
+</script>
+</body>
+</html>
